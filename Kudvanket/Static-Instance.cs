@@ -36,7 +36,7 @@ namespace Kudvanket
             Circle C1 = new Circle(5);
             float Area = C1.CalculateArea();
 
-            Console.WriteLine("Area of Cirlce is {0}", Area);
+            Console.WriteLine("Area of Cirlce {0}", Area);
         }
     }
 }
