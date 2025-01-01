@@ -19,12 +19,13 @@ namespace Kudvanket
             Console.WriteLine("Sum is {0}", F+S);
         }
 
-        public static void Add(int F, int S, int T)
+        public static void Add(int F, int S, out int T)
         {
-            Console.WriteLine("Sum is {0}", F + S + T);
+            Console.WriteLine("Sum is {0}", F + S);
+            T = F + S;
         }
 
-        public static void Add(int F, int S, int T, int E)
+        public static void Add(int F, int S, int T, float E)
         {
             Console.WriteLine("Sum is {0}", F + S + T + E);
         }
