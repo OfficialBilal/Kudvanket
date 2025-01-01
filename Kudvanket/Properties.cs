@@ -6,57 +6,65 @@ using System.Threading.Tasks;
 
 namespace Kudvanket
 {
-    class Student
+    class Students
     {
         int _Id;
         string _Name;
         int _PassMarks = 35;
 
-        public int GetPassMarks()
+        public int PassMarks
         {
-            return _PassMarks;
-        }
-
-        public void SetName(string Name)
-        {
-            if (string.IsNullOrEmpty(Name))
-            {
-                throw new Exception("Student name cannot Null or Empty");
+            get 
+            { 
+                return _PassMarks; 
             }
-            this._Name = Name;
         }
-        public string GetName()
+
+        public string Name
         {
-            return string.IsNullOrEmpty(_Name) ? "No Name" : this._Name;
-        }
-
-
-        public void SetID(int id)
-        { 
-            if (id <= 0)
+            set
             {
-                throw new Exception("Id cannot be negetive");
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Student name cannot Null or Empty");
+                }
+                this._Name = value;
             }
-            this._Id = id;
-        }
-        public int GetID()
-        {
-            return this._Id;
+            get
+            {
+                return string.IsNullOrEmpty(_Name) ? "No Name" : this._Name;
+            }
         }
 
+
+        public int Id
+        {
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new Exception("Id cannot be negetive");
+                }
+                this._Id = value;
+            }
+            get
+            {
+                return this._Id;
+            }
+        }
     }
     class Properties
     {
         public static void Main(string[] args)
         {
-            Student C1 = new Student();
-            C1.SetID(1);
-            C1.SetName("test");
+            Students C1 = new Students();
+            C1.Id = 10;
+            C1.Name = "Bilal";
 
 
-            Console.WriteLine("Student Id is: {0}", C1.GetID());
-            Console.WriteLine("Student Name is: {0}", C1.GetName());
-            Console.WriteLine("Student Marks is: {0}", C1.GetPassMarks());
+            Console.WriteLine("Student Id is: {0}", C1.Id);
+            Console.WriteLine("Student Name is: {0}", C1.Name);
+            Console.WriteLine("Student Marks is: {0}", C1.PassMarks);
 
         }
     }
