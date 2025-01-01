@@ -12,6 +12,10 @@ namespace Kudvanket
         string _Name;
         int _PassMarks = 35;
 
+        public string City {  get; set; }
+        public string Email {  get; set; }
+        
+
         public int PassMarks
         {
             get 
