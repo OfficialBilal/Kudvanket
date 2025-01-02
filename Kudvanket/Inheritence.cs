@@ -38,6 +38,7 @@ namespace Kudvanket
             FTE.LastName = "Bilal";
             FTE.YearlySalary = 5000000F;
             FTE.PrintFullName();
+            
 
             PartTimeEmployee PTE = new PartTimeEmployee();
             PTE.FirstName = "Blue";
