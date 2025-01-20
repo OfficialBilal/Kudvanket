@@ -30,7 +30,7 @@ namespace Kudvanket
         }
     }
 
-    class D: B,C 
+    class D: B //,C 
     {
         //Diamond Problem
     }
