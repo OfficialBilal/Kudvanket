@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Kudvanket
-{
+{ 
     class WhyEnums
     {
         public static void Main(string[] args)
@@ -46,7 +46,7 @@ namespace Kudvanket
         }
     }
 
-    public enum Gender
+    public enum Genderr
     {
         Unknown,
         Male,
