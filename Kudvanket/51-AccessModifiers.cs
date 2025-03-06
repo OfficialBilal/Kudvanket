@@ -10,7 +10,7 @@ namespace Kudvanket
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello Bilal! How are you?");
+            Console.WriteLine("Hello! How are you?");
         }
     }
 }
