@@ -5,7 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Kudvanket.Static_Instance</StartupObject>
+    <StartupObject>Kudvanket._51_AccessModifiers</StartupObject>
   </PropertyGroup>
 
 </Project>
